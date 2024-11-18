@@ -25,8 +25,10 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick_tap_ms = <175>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <29 30 31 32 41 42 43 44>;
         };
     };
 
@@ -50,7 +52,7 @@
             bindings = <
 &trans  &trans          &trans          &trans            &trans       &trans  &none                                                     &trans  &trans  &trans              &trans            &trans          &trans                  &trans
 &trans  &trans          &trans          &trans            &trans       &trans  &kp LA(LEFT_CONTROL)                                      &trans  &trans  &trans              &trans            &trans          &trans                  &trans
-&trans  &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &trans  &kp LA(SPACE)         &trans  &trans      &trans  &trans  &trans  &trans  &mt LEFT_CONTROL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_WIN SEMICOLON  &trans
+&trans  &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &trans  &kp LA(SPACE)         &trans  &trans      &trans  &trans  &trans  &trans  &hm LEFT_CONTROL J  &hm LEFT_SHIFT K  &hm LEFT_ALT L  &hm LEFT_WIN SEMICOLON  &trans
 &trans  &trans          &trans          &trans            &trans       &trans                                &trans      &trans                  &trans  &trans              &trans            &trans          &trans                  &trans
 &trans  &trans          &trans          &trans            &trans               &trans                &trans  &trans      &trans  &trans  &trans          &trans              &trans            &trans          &trans                  &trans
             >;
